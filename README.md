@@ -7,7 +7,7 @@ WISA 22nd (2021)에 발표한 논문
     - [Step 1. Timestamp Calibration](#step-1-timestamp-calibration)
     - [Step 2. Scaling](#step-2-scaling)
     - [Step 3. Window Sliding](#step-3-window-sliding)
-4. [실험 결과](#실험-결과)
+4. [실험 결과](#실험-결과)
    
 ### 모델 구조: Unsupervised Learning
 - 운전자 행동 프로파일링을 **이상 탐지** 개념으로 접근
