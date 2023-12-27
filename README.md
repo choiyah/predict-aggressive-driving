@@ -1,6 +1,7 @@
 # Unsupervised Driver Behavior Profiling leveraging Recurrent Neural Networks 
-WISA 22nd (2021)에 발표한 논문
+WISA 22nd (2021)에서 발표한 논문
 
+**<목차>**
 1. [모델 구조: Unsupervised Learning](#모델-구조-unsupervised-learning)
 2. [학습 데이터셋 구조](#학습-데이터셋-구조)
 3. [학습 데이터셋 구조: Feature Engineering](#학습-데이터셋-구조-feature-engineering)
