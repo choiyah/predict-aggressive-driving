@@ -1,6 +1,16 @@
 # Unsupervised Driver Behavior Profiling leveraging Recurrent Neural Networks 
 WISA 22nd (2021)에 발표한 논문
 
+1. [모델 구조: Unsupervised Learning](#-------unsupervised-learning)
+2. [학습 데이터셋 구조](#----------)
+3. [학습 데이터셋 구조: Feature Engineering](#------------feature-engineering)
+    - [Step 1) Timestamp Calibration](#step-1--timestamp-calibration)
+    - [Step 2) Scaling](#step-2--scaling)
+    - [Step 3) Window Sliding](#step-3--window-sliding)
+4. [실험 결과](#-----)
+
+
+
 ### 모델 구조: Unsupervised Learning
 - 운전자 행동 프로파일링을 **이상 탐지** 개념으로 접근
 - 타임 윈도우 피쳐 벡터를 인풋하여, **그 다음 타임 윈도우 피쳐 벡터를 예측**하는 **RNN** 모델 설계
