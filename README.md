@@ -3,10 +3,10 @@ WISA 22nd (2021)에 발표한 논문
 
 1. [모델 구조: Unsupervised Learning](#모델-구조:-unsupervised-learning)
 2. [학습 데이터셋 구조](#학습-데이터셋-구조)
-3. [학습 데이터셋 구조: Feature Engineering](#학습-데이터셋-구조:-feature-engineering)
-    - [Step 1) Timestamp Calibration](#step-1--timestamp-calibration)
-    - [Step 2) Scaling](#step-2--scaling)
-    - [Step 3) Window Sliding](#step-3--window-sliding)
+3. [학습 데이터셋 구조: Feature Engineering](#학습-데이터셋-구조:-Feature-Engineering)
+    - [Step 1. Timestamp Calibration](#Step-1.-timestamp-calibration)
+    - [Step 2. Scaling](#step-2.-scaling)
+    - [Step 3. Window Sliding](#step-3.-window-sliding)
 4. [실험 결과](#실험-결과)
    
 
@@ -27,17 +27,17 @@ WISA 22nd (2021)에 발표한 논문
   ![image](https://github.com/choiyah/predict-aggressive-driving/assets/62586517/18b1a978-fa06-453d-9cce-e3847fa119f9)
 
 ### 학습 데이터셋 구조: Feature Engineering
-#### Step 1) Timestamp Calibration
+#### Step 1. Timestamp Calibration
 - feature (acceleration, magnetometer, gyroscope)들의 frequency를 맞춰줌
 - **Downsampling**
   - frequency가 더 낮은 feature를 기준으로 잡고,  중복 주기에서의 **초기값**을 **대표값**으로 샘플링
     <img width="728" alt="image" src="https://github.com/choiyah/predict-aggressive-driving/assets/62586517/90f235f2-65fd-4f40-b8ff-96781ba01256">
 
-#### Step 2) Scaling
+#### Step 2. Scaling
 - feature (acceleration, linear acceleration, magnetometer, gyroscope)들을 min-max scaling (0~1)
 - **난폭 운전 데이터는 정상 운전 데이터를 기반으로 스케일링**
 
-#### Step 3) Window Sliding
+#### Step 3. Window Sliding
 - window 크기를 정하여 1 row씩 슬라이딩
 - window 크기의 feature vectors 시퀀스와 그 직후 feature vector를 실측 데이터로 묶음
   - (**Sequence of feature vectors**, **Ground-Truth of single feature vector**)
